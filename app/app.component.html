@@ -1,1 +1,7 @@
 {{title}}
+<input type="text" #txtName (keyup)="0"/>
+<button (click)="changeName(txtName.value)">test name</button>
+<my-tutorial *ngFor="let person of names" [name]="person" (onVote)="parentVote($event)"></my-tutorial>
+<p>Number agree:{{agree}}</p>
+<p>Number disgree:{{disgree}}</p>
+

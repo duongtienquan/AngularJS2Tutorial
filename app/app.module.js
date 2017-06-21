@@ -9,16 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-function restangular(RestangularProvider) {
-    RestangularProvider.setBaseUrl('https://5944f686cf46400011a81285.mockapi.io/vtvcab/');
-    // RestangularProvider.setDefaultRequestParams({
-    //     apikey: '586680ad69ce295b1738efe5'
-    // });
-    // RestangularProvider.setRestangularFields({
-    //     id: "_id"
-    // });
-}
-exports.restangular = restangular;
+var my_tutorial_component_1 = require("./MyComponent/my-tutorial.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +18,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
+        declarations: [app_component_1.AppComponent, my_tutorial_component_1.MyTutorialComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
